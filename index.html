@@ -11,6 +11,20 @@
   <meta property="og:description" content="Full-Stack Developer building with Django, React, Node.js, Python and DevOps tooling.">
   <meta property="og:url" content="https://shaziadev.github.io/">
   <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://shaziadev.github.io/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shazia Abbas",
+    "jobTitle": "Full-Stack Developer",
+    "worksFor": { "@type": "Organization", "name": "Arrivy" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of the Punjab" },
+    "url": "https://shaziadev.github.io/",
+    "sameAs": ["https://github.com/shaziadev", "https://www.linkedin.com/in/shazia-abbas-b37622309"]
+  }
+  </script>
   <meta name="theme-color" content="#0f766e">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='white'%3ESA%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,6 +57,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="theme-toggle" type="button" aria-label="Switch color theme">
@@ -86,14 +101,14 @@
           field-service management platform, building features end to end with Python/Django, ReactJS and Node.js.
         </p>
         <p>
-          I design REST APIs, build responsive React interfaces, work with SQL and NoSQL databases, and ship
-          code through Git-based CI/CD pipelines with Docker and cloud deployment. I'm comfortable owning a
-          feature from ticket to release in an Agile team, writing tests, and debugging production issues.
+          At Arrivy I work on scheduling, task and customer-notification features across the Django backend
+          and React dashboard. Outside work I've built three full-stack projects: a Django/React Kanban app
+          with Celery jobs, an Express/MongoDB store with Stripe checkout, and a CI/CD pipeline that builds
+          a Django + React app into Docker images and ships them to AWS EC2.
         </p>
         <ul class="facts" aria-label="Quick facts">
           <li><span class="fact-num">1+</span><span class="fact-label">year in production</span></li>
-          <li><span class="fact-num">3</span><span class="fact-label">open-source projects</span></li>
-          <li><span class="fact-num">Full</span><span class="fact-label">stack, API to deploy</span></li>
+          <li><span class="fact-num">3</span><span class="fact-label">full-stack projects on GitHub</span></li>
         </ul>
       </div>
     </section>
@@ -123,7 +138,7 @@
         </article>
         <article class="card skill-card">
           <h3>Testing &amp; Tools</h3>
-          <ul class="tags"><li>Pytest</li><li>Jest</li><li>React Testing Library</li><li>Postman</li><li>Git / GitHub</li><li>Jira</li><li>Agile / Scrum</li></ul>
+          <ul class="tags"><li>Pytest</li><li>Jest</li><li>Vitest</li><li>React Testing Library</li><li>Postman</li><li>Git / GitHub</li><li>Jira</li><li>Agile / Scrum</li></ul>
         </article>
       </div>
     </section>
@@ -142,10 +157,10 @@
             <ul class="bullets">
               <li>Built and shipped multiple end-to-end features across the Python backend and ReactJS frontend, from API design to UI and release.</li>
               <li>Designed and maintained REST API endpoints for scheduling, task and customer-notification workflows, used by the web app, mobile app and third-party integrations.</li>
-              <li>Developed reusable React components and pages with hooks and Redux, improving consistency across the dashboard and reducing duplicated UI code.</li>
+              <li>Developed reusable React components and pages with hooks and Redux for the dashboard.</li>
               <li>Built and maintained integrations with external systems (e.g. CRMs, webhooks) using Python and Node.js services.</li>
-              <li>Optimized slow database queries and API responses, speeding up high-traffic dashboard pages and scheduling endpoints.</li>
-              <li>Wrote unit and integration tests (Pytest, Jest) and improved coverage on owned modules, reducing regressions in releases.</li>
+              <li>Optimized slow database queries behind dashboard and scheduling endpoints.</li>
+              <li>Wrote unit and integration tests (Pytest, Jest) for the modules I owned.</li>
               <li>Worked with Docker, Git-based CI/CD and Google Cloud deployments; triaged and fixed production bugs and joined code reviews in a two-week Agile sprint cycle.</li>
             </ul>
           </div>
@@ -191,7 +206,7 @@
           </div>
           <h3><a href="https://github.com/shaziadev/django-react-devops-pipeline" target="_blank" rel="noopener">DevOps Pipeline</a></h3>
           <p class="project-sub">CI/CD for a Django + React app</p>
-          <p>Pipeline that runs tests and linting on every pull request and deploys Docker images to an EC2 server on merge to main. Nginx acts as a reverse proxy with HTTPS (Let's Encrypt) and environment-based settings for staging and production.</p>
+          <p>Pipeline that runs tests and linting on every pull request, builds Docker images and pushes them to GHCR, and has a deploy-to-EC2 job that can be switched on per environment. Nginx acts as a reverse proxy with HTTPS (Let's Encrypt), with separate settings for staging and production.</p>
           <ul class="tags small"><li>Docker</li><li>GitHub Actions</li><li>Nginx</li><li>AWS EC2</li><li>Django</li><li>React</li></ul>
         </article>
       </div>
@@ -202,13 +217,13 @@
       <div class="edu-grid">
         <article class="card">
           <p class="mono label">Education</p>
-          <h3>MIT</h3>
-          <p class="muted">2019 – 2021</p>
+          <h3>Master of Information Technology (MIT)</h3>
+          <p class="muted">University of the Punjab, Lahore · 2019 – 2021</p>
         </article>
         <article class="card">
           <p class="mono label">Certification</p>
           <h3>AI Engineering</h3>
-          <p class="muted">PNY Trainings · Instructor: Afra Kareem</p>
+          <p class="muted">PNY Trainings</p>
         </article>
       </div>
     </section>
